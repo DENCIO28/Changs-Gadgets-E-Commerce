@@ -1,0 +1,455 @@
+body {
+    font-family: 'Poppins', 'Sans Serif';
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+/*Tablet View Container*/
+@media (max-width: 830px) {
+    .container{
+        grid-template-areas: 
+        "header "
+        "nav "
+        "main "
+        "footer ";
+        max-width: 830px;
+        width: 100%;
+    }
+}
+
+/*Cellphone View Container*/
+@media (max-width: 430px) {
+    .container{
+        grid-template-areas: 
+        "header  "
+        "nav "
+        "main "
+        "footer"
+        ;
+        max-width: 430px;
+        width: 100%;
+    }
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    max-width: 1830px;
+}
+.cardbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    max-width: 1830px;
+    height: 500px;
+}
+.Category-box{
+    overflow: hidden;
+    margin-top: 2rem;
+    width: 260px;
+    height: 450px;
+    border-radius: 13px;
+    background-color: #dbd5d5;
+}
+/*Tablet View */
+@media (max-width: 830px) {
+    .cardbox{
+        grid-area: main;
+        max-width: 830px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 350px;
+    }
+    
+    .Category-box{
+        max-width: 830px;
+        overflow: hidden;
+        margin-top: 2rem;
+        width: 150px;
+        height: 250px;
+        border-radius: 13px;
+
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .cardbox{
+        max-width: 430px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .Category-box{
+        max-width: 430px;
+        overflow: hidden;
+        margin-top: 10px;
+        width: 100px;
+        height: 190px;
+        border-radius: 10px;
+    }
+}
+
+/* produc-lable CSS */
+.BGC-lable{
+    background-color: lightgray;
+    height: 50px;
+}
+.product-lable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 20px 25px 0 25px;
+    border-bottom: 2px blueviolet solid;
+    padding-top: 10px;
+}
+
+.product-lable h2,a{
+    text-decoration: none;
+    color:blueviolet;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+/*Tablet View */
+@media (max-width: 830px) {
+    .BGC-lable{
+        grid-area: main;
+        max-width: 830px;
+        width: 100%;
+        margin: 0;
+        background-color: lightgray;
+        height: 50px;
+    }
+    .product-lable{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 15px 0 15px;
+        border-bottom: 2px blueviolet solid;
+        padding-top: 5px;
+    }
+    
+    .product-lable h2,a{
+        text-decoration: none;
+        color:blueviolet;
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+}
+
+/*Cellphone View */
+@media (max-width: 430px) {
+    .BGC-lable{
+        grid-area: main;
+        max-width: 430px;
+        width: 100%;
+        margin: 0;
+        background-color: lightgray;
+        height: 30px;
+    }
+    .product-lable{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 10px 0 10px;
+        border-bottom: 2px blueviolet solid;
+        padding-top: 3px;
+    }
+    
+    .product-lable h2,a{
+        text-decoration: none;
+        color:blueviolet;
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+    .product-lable h2{
+        font-size: 15px;
+    }
+    .product-lable a{
+        font-size: 10px;
+    }
+}
+/* product css */
+.product img{
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+@media (max-width:830px){
+    .product img{
+        overflow: hidden;
+        width: 100%;
+        height: 125px;
+    }
+}
+@media (max-width: 430px) {
+    .product img{
+        overflow: hidden;
+        width: 100%;
+        height: 90px;
+    }
+}
+
+/* Category css */
+.category p{
+    font-size: 15px;
+    color: rgba(109, 107, 107, 0.911);
+    margin: 0;
+    padding: 5px;
+}
+/*Tablet View*/
+@media (max-width: 830px) {
+    .category p{
+        font-size: 10px;
+        color: rgba(128, 126, 126, 0.911);
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .category p{
+        font-size: 8px;
+        color: rgba(128, 126, 126, 0.911);
+        margin: 0;
+        padding: 2px;
+    }
+}
+/* productname css */
+.productname{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+.productname p{
+    margin: 0;
+    padding: 0 0 10px 10px;
+}
+/*Tablet View */
+@media (max-width: 830px) {
+    .productname{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .productname p{
+        margin: 0;
+        padding: 0 0 10px 10px;
+    }
+}
+
+/*Cellphone View */
+@media (max-width: 430px) {
+    .productname{
+        margin: 0;
+        padding: 5PX;
+        font-size: 10px;
+    }
+    .productname p{
+        margin: 0;
+        padding: 0 0 5px 2px;
+    }
+}
+/* rating css */
+.rating{
+    display: flex;
+    padding: 5px;
+}
+.rating img {
+    width: 80px;
+    height: 10px;
+    padding-left: 5px;
+}
+.rating p{
+    font-size: 13px;
+    margin: 0;
+    padding-left: 5px;
+}
+/*Tablet View */
+@media (max-width: 830px) {
+    .rating{
+        display: flex;
+        padding: 0;
+    }
+    .rating img {
+        width: 60px;
+        height: 10px;
+        padding-left: 5px;
+    }
+    .rating p{
+        font-size: 10px;
+        margin: 0;
+        padding-left: 5px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .rating{
+        display: flex;
+        padding: 0;
+    }
+    .rating img {
+        width: 40px;
+        height: 7px;
+    }
+    .rating p{
+        font-size: 8px;
+        margin: 0;
+        padding-left: 3px;
+    }
+}
+/* price css */
+.newprice{
+    display: flex;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: blueviolet;
+}
+.oldprice{
+    font-size: 20px;
+    color: rgb(155, 151, 151);
+    padding-left: 10px;
+    margin: 0;
+}
+/*Tablet View */
+@media (max-width: 830px) {
+    .newprice{
+        display: flex;
+        margin: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        color: blueviolet;
+    }
+    .oldprice{
+        font-size: 12px;
+        color: rgb(155, 151, 151);
+        padding-left: 10px;
+        margin: 0;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .newprice{
+        display: flex;
+        margin: 0;
+        padding-left: 3px;
+        font-size: 14px;
+        color: blueviolet;
+    }
+    .oldprice{
+        font-size: 10px;
+        color: rgb(155, 151, 151);
+        padding-left: 8px;
+        margin: 0;
+    } 
+}
+/*ads css*/
+.ads-box {
+    display: flex;
+    justify-content: center;
+}
+.ads img{
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+}
+/* ads-horizonal */
+.hor-ads{
+    display: flex;
+    max-width: 1830px;
+    height: 80px;
+}
+.ads-hori{
+    width: 100%;
+    height: 100%;
+}
+/*Tablet View*/
+@media (max-width: 830px) {
+    .ads-box{
+        display: flex;
+        justify-content: center;
+        max-width: 830px;
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+    .ads img{
+        width: 250px;
+        height: 125px;
+        margin: 5px;
+    }
+    .hor-ads{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+    .ads-hori{
+        max-width: 830px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .ads-box{
+        display: flex;
+        justify-content: center;
+        max-width: 430px;
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+    .ads img{
+        width: 200px;
+        height: 100px;
+        margin: 5px;
+    }
+    .hor-ads{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+    .ads-hori{
+        max-width: 430px;
+    }
+}
+/*footer css*/
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    color: #fff;
+    margin-top: 5px;
+    max-width: 1440px;
+}
+h2{
+    text-align: center;
+    color: #000000;
+}

@@ -1,0 +1,464 @@
+body {
+    font-family: 'Poppins', 'Sans Serif';
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+/* Tablet View Container*/
+@media (max-width: 830px) {
+    .container{
+        grid-template-areas: 
+        "header "
+        "nav "
+        "main "
+        "footer ";
+        max-width: 830px;
+        width: 100%;
+    }
+}
+
+/*Cellphone View Container*/
+@media (max-width: 430px) {
+    .container{
+        grid-template-areas: 
+        "header  "
+        "nav "
+        "main "
+        "footer"
+        ;
+        max-width: 430px;
+        width: 100%;
+    }
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    max-width: 1440px;
+    width: 100%;
+}
+footer{
+    grid-area: footer;
+}
+
+/* hero css */
+.hero{
+    display: flex;
+    background-image: url("../assets/about_us/banner-img.png") ;
+    height: 190px;
+    justify-content: center;
+}
+.hero-info{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    font-size: 56px;
+    color: #fefefe;
+}
+.hero-info h1{ 
+    font-size:94px;
+    text-align: center;
+    height: 75px;
+    width: 50;
+    margin: 0;
+}
+.hero-info p{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+}
+
+/* Tablet View*/
+@media (max-width: 830px) {
+    .hero{
+        max-width: 830px;
+        width: 100%;
+        display: flex;
+        background-color: #6805f2;
+        height: 190px;
+        justify-content: center;
+    }
+    .hero-info{
+        display: block;
+        justify-content: center;
+        height: 100px;
+        margin-top: 50px;
+        color: #fff;
+    }
+    .hero-info h1{ 
+        font-size: 55px;
+        height: 50;
+        width: 50;
+        margin: 0;
+    }
+    .hero-info p{
+        font-size: 30px;
+        margin: 0 0 0 30px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .hero{
+        max-width: 830px;
+        width: 100%;
+        display: flex;
+        background-color: #6805f2;
+        height: 190px;
+        justify-content: center;
+    }
+    .hero-info{
+        display: block;
+        justify-content: center;
+        height: 100px;
+        margin-top: 50px;
+        color: #fff;
+    }
+    .hero-info h1{ 
+        font-size: 55px;
+        height: 50;
+        width: 50;
+        margin: 0;
+    }
+    .hero-info p{
+        font-size: 30px;
+        margin: 0 0 0 30px;
+    }
+}
+/* content css */
+.content{
+    display: flex;
+    justify-content: center;
+}
+.about{
+    display: inline-block;
+    height: 6 00px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.image{
+    display: flex;
+    justify-self: center;
+    width: 600px;
+    height: 350px;
+    margin: 50px 20px 0 20px;
+}
+.story{
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px 0 0 25px;
+    height: 400px;
+    width: 735px;
+}
+
+.story p{
+    font-size: 25px;
+}
+/* Tablet View*/
+@media (max-width: 830px) {
+    .content{
+        max-width: 830px;
+        width: 100%;
+        display: flex;
+    }
+    .about{
+        display: inline-block;
+        height: 350px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .image{
+        display: flex;
+        justify-self: center;
+        width: 300px;
+        height: 250px;
+        background-color: rgb(177, 171, 177) ;
+        margin: 50px 20px 0 20px;
+    }
+    .story{
+        display: block;
+        margin-top: 20px;
+        padding: 50px 0 0 25px;
+        height: 200px;
+        width: 400px;
+    }
+    .story h4{
+        font-size: 20px;
+    }
+    .story h1{
+        font-size: 25px;
+    }
+    .story p{
+        font-size: 15px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .content{
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+    }
+    .about{
+        display: inline-block;
+        height: 350px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .image{
+        display: flex;
+        justify-self: center;
+        width: 300px;
+        height: 250px;
+        background-color: rgb(177, 171, 177) ;
+        margin: 50px 20px 0 20px;
+    }
+    .story{
+        display: block;
+        margin-top: 20px;
+        padding: 50px 0 0 25px;
+        height: 200px;
+        width: 400px;
+    }
+    .story h4{
+        font-size: 15px;
+    }
+    .story h1{
+        font-size: 20px;
+    }
+    .story p{
+        font-size: 10px;
+    }
+}
+/* .content-2 css */
+.tittle{
+    width: 100%;
+    margin-bottom: 50px;
+}
+/* Tablet View*/
+@media (max-width: 830px) {
+    .tittle{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .tittle{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+/* content right*/
+.paragrap-right{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+}
+.right h1{
+    font-size: 52px;
+    color: #fff;
+}
+
+.vission{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+}
+.bgc-r{
+    background-color: #6805f2;
+}
+
+.paragrap-right p{
+    font-size: 18px;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Tablet View*/
+@media (max-width: 830px) {
+    .paragrap-right{
+        display: flex;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        padding: 15px;
+    }
+    .right h1{
+        font-size: 35px;
+        color: #fff;
+    
+    }
+    .vission{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    .bgc-r{
+        background-color: #6805f2;
+    }
+    .paragrap-right p{
+        font-size: 15px;
+    }
+}                                        
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .paragrap-right{
+        display: flex;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        padding: 15px;
+    }
+    .right h1{
+        font-size: 35px;
+        color: #fff;
+    
+    }
+    .vission{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    .bgc-r{
+        background-color: #6805f2;
+    }
+    .paragrap-right p{
+        font-size: 10px;
+    }
+}
+/* content left */
+.paragrap-left{
+    display: flex;
+    text-align: center;
+    color: #6805f2;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.paragrap-left p{
+    font-size: 18px;
+}
+
+.vission h3{
+    margin: 0;
+}
+
+.left h1{
+    display: flex;
+    font-size: 52px;
+    width: 100%;
+    justify-content: flex-end;
+    color: #6805f2;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #6805f2;
+}
+
+.mission h3{
+    margin: 0;
+}
+
+.bgc-l{
+    background-color: rgb(184, 181, 181);
+}
+/* Tablet View*/
+@media (max-width: 830px) {
+    .paragrap-left{
+        display: flex;
+        text-align: center;
+        color: #6805f2;
+        font-size: 10px;
+        padding: 20px;
+    }
+    .left h1{
+        display: flex;
+        font-size: 35px;
+        width: 100%;
+        justify-content: flex-end;
+        color:#6805f2;
+    }
+    
+    .mission {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #6805f2;
+    }
+    .bgc-l{
+        background-color: rgb(184, 181, 181);
+    }
+    .paragrap-left p{
+        font-size: 15px;
+    }
+}
+
+/*Cellphone View*/
+@media (max-width: 430px) {
+    .paragrap-left{
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        color: #6805f2;
+        font-size: 10px;
+        padding: 20px;
+    }
+    .left h1{
+        display: flex;
+        font-size: 35px;
+        width: 100%;
+        justify-content: flex-end;
+        color:#6805f2;
+    }
+    
+    .mission {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #6805f2;
+    }
+    .bgc-l{
+        background-color: rgb(184, 181, 181);
+    }
+    .paragrap-left p{
+        font-size: 10px;
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-direction: start;
+    justify-content: left;
+    flex-wrap: left;
+}

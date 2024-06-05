@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins';
+}
+
+.container{border: 2px red solid;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+/* .login css */
+.login{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(177, 166, 166);
+    height: 700px;
+}
+.log-in-box{
+    display: inline;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    height: 500px;
+    width: 500px;
+    margin-top: 150px;
+}
+.log-in-box h1,h4{
+    margin: 20px;
+    color: #6805f2;
+}
+/* type-user css */
+.type-user input{
+    margin: 15px 0 0 0;
+    width: 300px;
+    height: 40px;
+}
+.type-user h6{
+    text-align: left;
+    margin: 5px 0 10px 100px;
+    width: 250px; 
+    color: rgba(122, 119, 119, 0.904);
+}
+/* button css */
+button h3{
+    margin: 10px 0 0 0;
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+}
+button{
+    margin: 20px;
+    background-color: #6805f2;
+}
+h5{
+    color: rgba(122, 119, 119, 0.904);
+}
+b{
+    color: #6805f2;
+}
+/* google-icon css*/
+p{
+    margin: 20px;
+}
+.google-icon{
+    width: 80px;
+    height: 60px;
+    background-color: gray;
+    margin: 0 0 0 214px; 
+    /*ala ko balo saon pag center ani pa usab nalang ko ani wabu  
+    ang line sad diay sa tapad sa or with kay diko balo saon pag putang hehehe*/
+}
+
